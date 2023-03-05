@@ -1,0 +1,20 @@
+<div class="samples">
+  <h2>Samples</h2>
+
+  <div>
+    <input
+      type="text"
+      class="form-control"
+      name="txtValue"
+      (input)="onInputTextEvent()"
+      placeholder="Enter here some value"
+      [(ngModel)]="textvalue"
+    />
+  </div>
+  <div>
+    <input type="text" value="{{ textvalue }}" />
+  </div>
+  <div>
+    <button [disabled]="!enabledButton">Reset</button>
+  </div>
+</div>

@@ -9,7 +9,6 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { HomeComponent } from "./home/home.component";
-import { AboutComponent } from "./about/about.component";
 import { MatTabsModule } from "@angular/material/tabs";
 import { CoursesCardListComponent } from "./courses-card-list/courses-card-list.component";
 import { CourseComponent } from "./course/course.component";
@@ -31,12 +30,13 @@ import { MatMomentDateModule } from "@angular/material-moment-adapter";
 import { MeComponent } from "./me/me.component";
 import { WarningAlertComponent } from "./warning-alert/warning-alert.component";
 import { SuccessAlertComponent } from "./success-alert/success-alert.component";
+import { SamplesComponent } from "./samples/samples.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
+    SamplesComponent,
     MeComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
@@ -69,6 +69,7 @@ import { SuccessAlertComponent } from "./success-alert/success-alert.component";
     MatDatepickerModule,
     MatMomentDateModule,
     ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
